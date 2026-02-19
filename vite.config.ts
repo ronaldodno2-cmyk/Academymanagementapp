@@ -5,18 +5,14 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [
-    // Os plugins React e Tailwind são necessários
     react(),
     tailwindcss(),
   ],
   resolve: {
     alias: {
-      // Alias @ para a pasta src
       '@': path.resolve(__dirname, './src'),
     },
   },
-
-  // Tipos de arquivos suportados para importação bruta
   assetsInclude: ['**/*.svg', '**/*.csv'],
 
   // 🔹 Ajuste para GitHub Pages
